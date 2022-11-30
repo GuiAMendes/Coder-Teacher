@@ -1,0 +1,217 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header {
+    background-color: rgb(32, 27, 44);
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 100px 0;
+}
+.logo {
+    color: #ffffff;
+    display: flex;
+}
+.logo span{
+    color:  #00b4d8;
+}
+.icone {
+    height: 9vh;
+    padding: 10px;
+}
+.nav{
+    display: flex;
+    padding-right: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.nav ul {
+    float: right;
+    list-style-type: none;
+    cursor: pointer;
+}
+.nav > li{
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: lighter; 
+    float: right;
+    height:9vh;
+    justify-content: center;
+    margin: 0 20px;
+    padding-right: 20px;
+    width: 4.5vw;
+}
+
+#primeiro_link{
+    background-color: rgb(69, 52, 109);
+    padding: 25px;
+}
+li > a:hover {
+    align-items: center;
+    background-color: #8435C7;
+   
+    padding: 25px 40px 25px 25px;
+    transition: 0.3ms;
+}
+nav ul li> ul{
+    display: block;
+}
+li a img {
+    width: 50px;
+}
+.main {
+    display: flex;
+    padding-top: 150px;
+    background-image: linear-gradient( #90e0ef,#00b4d8,#0077b6);
+}
+.left_main {
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 50vw;
+}
+.card-busca {
+    align-items: center;
+    background-image: linear-gradient(#ffffff,#ffff,#bbc7dc,#6d90b9,#6383a8);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    margin: 4cm 2cm 4cm 2cm;
+    padding: 10px 20px 30px 20px;
+    width: 30vw;
+}
+.card-busca > h1 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-weight: lighter;
+}
+label {
+    background-color:  rgba(0,180,216,1);
+    border-radius: 10px;
+    font-size: large;
+    text-align: center;
+    padding: 2px 5px 2px 5px;
+}
+input {
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: medium;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+}
+select {
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: medium;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+}
+.tabs {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+table {
+    margin: auto;
+    width: 50vw;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+td { 
+    border: 2px solid hsla(0, 0%, 0%, 1);;
+    border-collapse:collapse;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+}
+.Cor_inf {
+    background-color: rgba(0,180,216,1);
+    border-radius: 10px;
+    border: 1px solid rgba(0,180,216,1);
+}
+.Cor_dias {
+    background-color: rgba(0,180,216,1);
+    border-radius: 10px;
+    border: 1px solid rgba(0,180,216,1);
+}
+.Cor_horario {
+    background-color: #90e0ef;
+    border: 1px solid #90e0ef;
+}
+.Cor_prof{
+    border-radius: 10px;
+    background-color: #90e0ef;
+    border: 1px solid #90e0ef;
+}
+.footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(32, 27, 44);
+    color: #ffffff;
+    text-align: center;
+    padding: 1px 0px 0px 0px;
+    width: 100%;
+}
+.footer >h2 {
+    font-size: medium;
+}
+.icones_acesso {
+    display: flex;
+    justify-content:center;
+}
+.redes {
+    cursor: pointer;
+    width: 25px;
+    padding: 5px;
+}
+.direitos {
+    background-color: rgb(24, 23, 23);
+    font-size: small;
+    height: 15vh;
+    padding-bottom: 30px;
+    width: 100%;
+}
+#termos {
+    text-decoration: none;
+}
+@media only screen and (max-width: 1144px) {
+    .main {
+        padding: 250px 0 150px 0;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .main {
+        padding: 350px 0 100px 0;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .main {
+        padding: 250px 0 150px 0;
+        flex-direction: column;
+    }
+    .left-main{
+        margin:auto;
+        width: 80vw;
+    }
+    .tabs {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        overflow-x: auto;
+    }
+    .card-busca {
+        width: 50vw;
+    }
+
+}

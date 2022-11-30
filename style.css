@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2? família=Roboto:ital,wght@1,300&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header {
+    background-color: rgb(32, 27, 44);
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1;
+}
+.logo {
+    color: #ffffff;
+    display: flex;
+}
+.logo span{
+    color:  #00b4d8;
+}
+.icone {
+    height: 9vh;
+    padding: 10px;
+}
+.nav{
+    display: flex;
+    padding-right: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.nav ul {
+    float: right;
+    list-style-type: none;
+    cursor: pointer;
+}
+.nav > li{
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: lighter; 
+    float: right;
+    height:9vh;
+    justify-content: center;
+    margin: 0 20px;
+    padding-right: 20px;
+    width: 4.5vw;
+}
+#primeiro_link{
+    background-color: rgb(69, 52, 109);
+    padding: 25px;
+}
+li > a:hover {
+    align-items: center;
+    background-color: #8435C7;
+    padding: 25px 40px 25px 25px;
+    transition: 0.3ms;
+}
+nav ul li> ul{
+    display: block;
+}
+li a img {
+    width: 50px;
+}
+h1 > material-icons{
+    height: 2vh;
+}
+.main {
+    align-items: center;   
+    background-image: linear-gradient( #90e0ef,#00b4d8,#0077b6);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding: 100px 0px 80px 0px;
+    width: 100%;   
+}
+.left-login {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    height: 100vh;
+    justify-content: center;
+    padding-top: 200px;
+    width: 50vw;  
+}
+.left-login > h1{
+    color: black;
+    margin: 1cm;
+    font-weight: bolder;
+}
+#foto {
+    height: 100vh;
+    margin: auto;
+    margin: 0cm 0cm 2cm 2cm;
+    max-width: 50vw;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float{
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.right-login {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 50vw;
+    padding-top: 250px;
+}
+.card-login {
+    align-items: center;
+    background-image: linear-gradient(#ffffff,#ffff,#bbc7dc,#6d90b9,#6383a8);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    margin: 4cm 2cm 4cm 2cm;
+    padding: 10px 20px 30px 20px;
+    width: 35%;
+}
+.card-login > h1 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-weight: lighter;
+}
+label {
+    background-color:  rgba(0,180,216,1);
+    border-radius: 10px;
+    font-size: large;
+    text-align: center;
+    padding: 2px 5px 2px 5px;
+}
+input {
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: medium;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+    
+}
+select {
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: medium;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+}
+.footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(32, 27, 44);
+    color: #ffffff;
+    text-align: center;
+    padding: 1px 0px 0px 0px;
+    width: 100%;
+}
+.footer >h2 {
+    font-size: medium;
+}
+.icones_acesso {
+    display: flex;
+    justify-content:center;
+}
+.redes {
+    cursor: pointer;
+    width: 25px;
+    padding: 5px;
+}
+.direitos {
+    background-color: rgb(24, 23, 23);
+    font-size: small;
+    height: 15vh;
+    padding-bottom: 30px;
+    width: 100%;
+}
+#termos {
+    text-decoration: none;
+}
+@media only screen and (max-width: 1144px) {
+    .main {
+        padding: 400px 0 150px 0;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .main {
+        padding: 400px 0 100px 0;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .main {
+        padding: 400px 0 400px 0;
+    }
+    .left-login {
+        margin: 2cm;
+    }
+    .left-login > h1 {
+        padding-left: 1cm;
+    }
+    .right-login {
+        padding: 0;
+    }
+    #foto {
+        margin: 2cm;
+        padding-bottom: 100px;
+    }
+}

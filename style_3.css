@@ -1,0 +1,137 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(#90e0ef,#00b4d8,#0077b6);
+}
+.header {
+    background-color: rgb(32, 27, 44);
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 100px 0;
+}
+.logo {
+    color: #ffffff;
+    display: flex;
+}
+.logo span{
+    color:  #00b4d8;
+}
+.icone {
+    height: 9vh;
+    padding: 10px;
+}
+.nav{
+    display: flex;
+    padding-right: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.nav ul {
+    float: right;
+    list-style-type: none;
+    cursor: pointer;
+}
+.nav > li{
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: lighter; 
+    float: right;
+    height:9vh;
+    justify-content: center;
+    margin: 0 20px;
+    padding-right: 20px;
+    width: 4.5vw;
+}
+
+#primeiro_link{
+    background-color: rgb(69, 52, 109);
+    padding: 25px;
+}
+li > a:hover {
+    align-items: center;
+    background-color: #8435C7;
+   
+    padding: 25px 40px 25px 25px;
+    transition: 0.3ms;
+}
+nav ul li> ul{
+    display: block;
+}
+li a img {
+    width: 50px;
+}
+.main {
+    background-image: linear-gradient( #90e0ef,#00b4d8,#0077b6);
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+table {
+    margin: auto;
+    width: 90%;
+    margin: 1cm;
+    padding: 20px 0px 20px 0px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.Color{
+    background-color: rgba(0,180,216,1);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+}
+.tab_main {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+.conf_dados {
+    border: 2px solid hsla(0, 0%, 0%, 1);;
+    border-radius: 10px;
+    background-color: white;
+    padding: 6px;
+    text-align: center;
+    width: 80%;
+}
+.footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(32, 27, 44);
+    color: #ffffff;
+    text-align: center;
+    padding: 1px 0px 0px 0px;
+    width: 100%;
+}
+.footer >h2 {
+    font-size: medium;
+}
+.icones_acesso {
+    display: flex;
+    justify-content:center;
+}
+.redes {
+    cursor: pointer;
+    width: 25px;
+    padding: 5px;
+}
+.direitos {
+    background-color: rgb(24, 23, 23);
+    font-size: small;
+    height: 15vh;
+    padding-bottom: 30px;
+    width: 100%;
+}
+#termos {
+    text-decoration: none;
+}
